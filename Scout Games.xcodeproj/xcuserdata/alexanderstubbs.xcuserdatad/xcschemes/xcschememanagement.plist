@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Scout Games WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Scout Games WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Scout Games.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>830454841AF11FA40016DC9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8339A12E1AF128B8005AF331</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>834DD4711AB9EE20006998FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>839218291AB895660079529E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>839218451AB895660079529E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83AE9BA01AFBFCF0005E19C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

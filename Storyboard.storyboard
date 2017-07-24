@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UGX-qG-AQr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="JEB-6s-Ius">
+            <objects>
+                <controller id="UGX-qG-AQr" customClass="InterfaceController">
+                    <items>
+                        <imageView width="135" height="53" alignment="left" image="logoXcode.png" id="wG7-4h-6MR"/>
+                        <button width="1" alignment="center" title="Recently View Game" id="6hb-jP-and">
+                            <connections>
+                                <action selector="gameView" destination="UGX-qG-AQr" id="sY9-jv-qJN"/>
+                                <segue destination="u0Q-PE-Msh" kind="modal" id="Vn5-WV-gDd"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Get Favourites" id="fBc-Qq-OjK">
+                            <connections>
+                                <action selector="favs" destination="UGX-qG-AQr" id="0vQ-3d-nbS"/>
+                                <segue destination="A5B-ma-Sjh" kind="modal" id="hh1-xc-Bbb"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Favs" destination="fBc-Qq-OjK" id="cwG-HH-cHH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="227" y="361"/>
+        </scene>
+        <!--Viewthe Game-->
+        <scene sceneID="TBg-16-FGE">
+            <objects>
+                <controller id="u0Q-PE-Msh" customClass="viewtheGame">
+                    <items>
+                        <label alignment="left" text="Name" id="1HK-br-fiJ"/>
+                        <label alignment="left" text="Label" id="Y1v-uY-H7y"/>
+                        <label alignment="left" text="Equipment" id="yCL-wV-49w"/>
+                        <label alignment="left" text="Label" id="cLG-BY-azY"/>
+                        <label alignment="left" text="Description" id="iT5-uQ-3gP"/>
+                        <label alignment="left" text="Label" id="lQg-eu-X8Z"/>
+                    </items>
+                    <connections>
+                        <outlet property="des" destination="lQg-eu-X8Z" id="Rmj-8r-Swz"/>
+                        <outlet property="item" destination="cLG-BY-azY" id="wRw-zQ-Fck"/>
+                        <outlet property="nameOfGame" destination="Y1v-uY-H7y" id="heT-nT-9Ny"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="243"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="vd4-Xr-oFU">
+            <objects>
+                <controller identifier="gamesTable" title="Table" id="A5B-ma-Sjh" customClass="tableGame">
+                    <items>
+                        <table alignment="left" id="6fM-RI-zZZ">
+                            <items>
+                                <tableRow identifier="TableForFavs" id="rNv-Ii-Jgh" customClass="WatchCell">
+                                    <group key="rootItem" width="1" alignment="left" spacing="0.0" id="vPN-L3-Ft5">
+                                        <items>
+                                            <label width="108" height="37" alignment="left" text="Label" id="NHg-mz-fOF"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cellTitle" destination="NHg-mz-fOF" id="4bD-Vb-Sfe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="gamesTable" destination="6fM-RI-zZZ" id="9m4-KQ-0AT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="467"/>
+        </scene>
+    </scenes>
+</document>
